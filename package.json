@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-grab-bag": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-connect": "latest",
+    "gulp-concat": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-autoprefixer": "latest"
+  }
+}

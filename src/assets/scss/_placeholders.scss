@@ -1,0 +1,40 @@
+/* Centers Block
+------------------------*/
+%center-block {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Full Width Centered Backgrounds
+------------------------*/
+%cover-background {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Absolute Pos. With Centering
+------------------------*/
+%absolute-vert-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+%absolute-horz-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+%absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+}
+

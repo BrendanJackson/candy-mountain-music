@@ -1,0 +1,24 @@
+/**
+*  Resets
+*/
+
+*, body, ul {
+  -webkit-margin-before:      0 !important;
+  -webkit-margin-after:       0 !important;
+  -webkit-margin-start:       0 !important;
+  -webkit-margin-end:         0 !important;
+  -webkit-padding-before:     0 !important;
+  -webkit-padding-after:      0 !important;
+  -webkit-padding-start:      0 !important;
+  -webkit-padding-end:        0 !important;
+
+}
+
+body{margin: 0 !important;}
+
+.ccm-layout-column-wrapper{display: flex;}
+
+img{
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,83 @@
+/*
+|------------------------------------------------
+| Base Styles
+|------------------------------------------------
+| Styles that transend the entire project
+|
+|
+*/
+
+@import "variables";
+
+*{
+  line-height: 1;
+}
+body{
+  background-color: $cm-white;
+  margin: 0 !important;
+}
+
+footer{
+  display: flex;
+}
+
+li{
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0;
+}
+
+h1{
+  font-size:120px;
+}
+h2{
+  font-size:100px;
+}
+h3{
+  font-size:90px;
+}
+h4{
+  font-size:80px;
+}
+h5{
+  font-size:60px;
+}
+h6{
+  font-size:40px;
+}
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+a{
+  color: $cm-red;
+}
+a:hover,a:focus{
+  color: $cm-secondary;
+  text-decoration: none;
+}
+a:focus{outline-color: $cm-red;}
+
+.ccm-page{}
+.content-wrap{
+  margin: 0 auto;
+  padding: 5%;
+  max-width: 1200px;
+}
+/**
+* Utility Classes
+*/
+
+.flex-center{
+  display: flex;
+}

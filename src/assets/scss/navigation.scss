@@ -1,0 +1,273 @@
+@import "variables";
+
+/* Boundary Testing */
+nav, nav *{
+  // background: #000 !important;
+  // color: #0f0 !important;
+  // outline: solid #000 3px !important;
+}
+
+/**
+* Mobile 1st
+*/
+
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $cm-red;
+
+  .logo{
+    padding: 10px 0;
+
+    a{
+      color: $cm-white;
+
+      h1{
+        text-align: center;
+        font-size: 45px;
+      }
+    }
+
+    a:hover{
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    img{ display: none; }
+
+  }
+
+
+
+  .xylophone-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+
+    .v-line{
+      position: absolute;
+      border: solid $cm-black 10px;
+      top: -10px;
+      bottom: 0;
+      width: 34px;
+      border-radius: 10px;
+      background-color: $cm-white;
+    }
+
+    .x-line1{left:13%;}
+    .x-line2{right:13%;}
+
+    .xylophone-peg{
+      background-color: $cm-black;
+      border-radius: 100%;
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      z-index: 2;
+
+    }
+
+
+    .peg1, .peg3, .peg5, .peg7{left: 18%;}
+    .peg2, .peg4, .peg6, .peg8{right: 18%;}
+
+    .peg1, .peg2{top:11%;}
+    .peg3, .peg4{top:35%;}
+    .peg5, .peg6{top:58%;}
+    .peg7, .peg8{top:82%;}
+
+
+    .xylophone{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      -webkit-margin-start: 0;
+      -webkit-margin-end: 0;
+      -webkit-padding-start: 0;
+
+      .peg-li1{
+        margin-top: 15px;
+        width: 75%;
+      }
+      .peg-li2{ width: 80%; }
+      .peg-li3{ width: 85%; }
+      .peg-li4{
+        margin-bottom: 20px;
+        width: 90%;
+      }
+
+      .peg-aligner{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+      } // End peg-aligner
+
+      li:hover{
+        cursor: url(../images/mallet.png), auto; // , auto
+      }
+
+
+
+
+      li  {
+        height: 65px;
+        text-align: center;
+        margin: 5px 0;
+        background-size: contain;
+        background-color: $cm-white;
+        border: solid $cm-black 10px;
+        border-radius: 10px;
+        position: relative;
+
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          font-size: 38px;
+
+        } // end a
+
+
+      } // end li
+
+
+
+    } // end xlyophone
+
+  } // End xlyophone-wrap
+
+} // End Nav
+
+@media screen and ( min-width: $small-width ) {
+
+  /* Boundary Testing */
+  nav, nav *{
+    // background: #000 !important;
+    // color: #0f0 !important;
+    // outline: solid red 3px !important;
+  }
+
+  /**
+  * Mobile 1st
+  */
+  header{position: relative;}
+
+  .header-image{
+    background-image: url(../images/CMM-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  nav{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+
+    .logo {
+      height: auto;
+      padding: 20px;
+      width: 200px;
+
+
+      a{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 200px;
+
+
+        img{
+          border-radius: 100%;
+          width: 100%;
+          height: auto;
+          display: flex;
+        }
+
+        h1{
+          font-size: 20px;
+          width: 50px;
+          position: absolute;
+          right: -10%;
+        }
+
+      } // End a
+
+
+    }
+
+    .xylophone-wrap{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: relative;
+      margin: 0;
+
+      .v-line{ display: none; }
+      .xylophone-peg{ display: none; }
+
+
+      .xylophone{
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: $cm-white;
+        width: 80%;
+        padding: 2px 0px;
+        border-radius: 5px;
+        position: relative;
+
+
+        .peg-li1, .peg-li2, .peg-li3, .peg-li4{
+          width: 100%;
+          margin: 0;
+        }
+
+        .peg-aligner{  width: unset;  } // End peg-aligner
+
+
+        li  {
+          height: unset;
+          border: unset;
+          border-radius: unset;
+          padding: 0 10px;
+          margin: 0;
+
+          a{
+            font-size: 24px;
+
+          } // end a
+
+          a:hover{
+             cursor: url(../images/mallet.png), auto; // , auto
+          }
+
+        } // end li
+
+
+
+      } // end xlyophone
+
+    } // End xlyophone-wrap
+
+  } // End Nav
+
+
+} // End @media screen and ( min-width: $small-width )

@@ -1,0 +1,39 @@
+/**
+* Variables
+*/
+// $primary: rgba(158, 4, 51, 1)
+
+$cm-red: rgba(158, 4, 51, 1) !global;
+$cm-white: rgba(227, 233, 188,1) !global;
+$cm-black: rgba(0,0,0,1);
+
+$cm-secondary: rgba(242, 102, 142,1);
+
+/* Colors */
+// $color_white:               #fff;
+// $primary-color:             #E63C2F;
+// $secondary-color:           #0D0D0D;
+// $tertiary-color:            #E5E4DA;
+//
+// /* Site Globals */
+// $site-text-color:           $tertiary-color;
+// $site-font-stack:           "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $site-font-size:            1.8rem;
+// $site-max-width:			1920px;
+// $site-body-bg:				$secondary-color;
+//
+// /* Use path to set backgrounds */
+// $assetPath :                "/wp-content/themes/fm-framework";
+//
+// /* Base Padding in EMs. Check Mixins to see use */
+// $section-padding:           3.6;
+//
+// /* Default Responsive breakpoints. Check Mixins to see use */
+$tiny-width:				320px;
+$small-width:       600px;
+$medium-width:      992px;
+$large-width:       1200px;
+$xlarge-width:      1600px;
+
+// /* Default Content Constraints. */
+// $constrained-default:       500px;
